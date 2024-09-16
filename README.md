@@ -17,4 +17,5 @@ PunctaFinder was developed in Python version 3.9 using the following modules:
 - `PunctaFinde_Code_Dataset_Thresholds.ipynb`: this file contains code for: (1) creating a validated dataset; (2) obtaining optimal punctum detection thresholds with a bootstrapping approach; (3) visualisation of the optimisation outcomes.
 - `PunctaFinder_Functions.ipynb`: all PunctaFinder functions as described in Table S1 of the manuscript PunctaFinder: 'An algorithm for automated spot detection in fluorescence microscopy images'. An abridged version of this table is included below.
 
-- 
+![image](https://github.com/user-attachments/assets/fee8043a-8271-45e7-af38-372ed8ec64f5)
+
