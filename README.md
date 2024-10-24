@@ -16,11 +16,7 @@ PunctaFinder was developed in Python version 3.9 using the following modules:
 
 Installation of PunctaFinder (detailed below) creates a virtual environment with these specific versions of the modules.
 
-### Available files
-This repository contains the following files:
-
-- _demo_data.tif:_ example data that are used in the demo notebook. This image stack contains a bright-field image, a GFP fluorescence image and cell masks of six cells that express Pln1-mNeonGreen (a marker protein for lipid droplets).
-
+### Relevant files
 - _PunctaFinder_Demo.ipynb:_ tutorial notebook for first-time PunctaFinder users. A stepwise guide that provides a short and practical demonstration of:
     1. creation of a validated dataset;
     2. determination of detection threshold values;
@@ -32,18 +28,26 @@ This repository contains the following files:
     2. obtaining optimal punctum detection thresholds **with** a bootstrapping approach;
     3. visualisation of the optimisation outcomes.
 
-- _PunctaFinder.zip:_ the PunctaFinder Python package
- 
+- _demo_data.tif:_ example data that are used in the demo notebook. The image stack contains a bright-field image, a GFP fluorescence image and cell masks of six cells that express Pln1-mNeonGreen (a marker protein for lipid droplets).
+
+- _example_dataset_bootstrap.csv:_ example dataset that is used to demonstrate threshold optimisation with bootstrapping.
+
+- _punctafinder:_ folder with Python files containing the PunctaFinder functions.
+
+- _environment.yml:_ file that is used to create a virtual environment during the installation of PunctaFinder (detailed below).
 
 ### Installation
-**Step 1.** First, clone the repository with _e.g._ Git Bash:
+
+**Step 1.** Open a (Anaconda) shell and use git to clone the repository:
 ```sh
 git clone https://github.com/molecular-systems-biology/PunctaFinder
 ```
-**Step 2.** In the Conda command line, navigate to the folder in which you cloned the PunctaFinder repository. Use (for example):
+
+**Step 2.** Navigate to the PunctaFinder folder:
 ```sh
-cd C:\Users\name\PunctaFinder
+cd PunctaFinder
 ```
+
 **Step 3.** Create a virtual environment with all required modules and their correct versions:
 ```sh
 conda env create -f environment.yml
@@ -68,4 +72,8 @@ or
 jupyter notebook
 ```
 
-**Step 7.** Create a new notebook and select the PunctaFinder kernel.
+**Step 7.** Create a new notebook and select the PunctaFinder kernel. Import the PunctaFinder functions with:
+
+ `import punctafinder.PF_functions as PF`
+
+ (assuming the current working directory of the Jupyter notebook is the base directory containing the PunctaFinder module)
