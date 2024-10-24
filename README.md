@@ -74,6 +74,6 @@ jupyter notebook
 
 **Step 7.** Create a new notebook and select the PunctaFinder kernel. Import the PunctaFinder functions with:
 
- `import punctafinder.PF_functions as PF`
+ `import punctafinder as PF`
 
  (assuming the current working directory of the Jupyter notebook is the base directory containing the PunctaFinder module)
